@@ -1,5 +1,7 @@
 # Project Euler
 
 Seeing how far I can get with the
-[https://projecteuler.net/about](https://projecteuler.net/about)
+[Project Euler](https://projecteuler.net/about)
 problems, primarily in Ruby.
+
+If I can get to fifty, I'll be happy.
