@@ -6,4 +6,4 @@
 require_relative 'lib/common'
 
 n = m = 20
-puts factorial(m + n) / (factorial(n) * factorial(m))
+puts (m + n).factorial / (n.factorial * m.factorial)

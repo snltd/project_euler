@@ -12,6 +12,14 @@ def sum_of_proper_divisors(n)
   proper_divisors(n).inject(:+)
 end
 
-def factorial(n)
-  1.upto(n).inject(:*)
+class Numeric
+  def factorial
+    if self.zero?
+      1
+    elsif self.positive?
+      1.upto(self).inject(:*)
+    else
+      nil
+    end
+  end
 end
