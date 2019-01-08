@@ -17,7 +17,7 @@ remain = 1_000_000 - 1
 1.upto(N) do |i|
   j = remain / (N - i).factorial
   remain = remain % (N - i).factorial
-  perm_num.<< numbers[j].to_s
+  perm_num.<< numbers[j]
   numbers.delete_at(j)
   break if remain.zero?
 end
