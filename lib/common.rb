@@ -11,3 +11,7 @@ end
 def sum_of_proper_divisors(n)
   proper_divisors(n).inject(:+)
 end
+
+def factorial(n)
+  1.upto(n).inject(:*)
+end
