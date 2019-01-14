@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 
-r = Range.new(100, 999)
-h = 0
+highest = 0
 
-r.each do |a|
-  r.each do |b|
+(100..999).each do |a|
+  (100..999).each do |b|
     p = a * b
-    h = p if p.to_s == p.to_s.reverse && p > h
+    s = p.to_s
+    highest = p if p > h && s == s.reverse
   end
 end
 
-puts h
+puts highest
