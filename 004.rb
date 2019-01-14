@@ -6,7 +6,7 @@ highest = 0
   (100..999).each do |b|
     p = a * b
     s = p.to_s
-    highest = p if p > h && s == s.reverse
+    highest = p if p > highest && s == s.reverse
   end
 end
 
