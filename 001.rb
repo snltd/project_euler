@@ -14,4 +14,4 @@ def multiples_of(*int)
   end
 end
 
-puts multiples_of(3, 5).inject(:+)
+puts multiples_of(3, 5).sum

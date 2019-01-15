@@ -17,4 +17,4 @@ LIMIT = 28_122
 
 abundant_numbers = (12..LIMIT).select { |n| abundant?(n) }
 
-puts(Set.new(1..LIMIT) - all_sums(abundant_numbers)).inject(:+)
+puts(Set.new(1..LIMIT) - all_sums(abundant_numbers)).sum

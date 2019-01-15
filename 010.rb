@@ -8,4 +8,4 @@ def primes_upto(max)
   end.drop(2).reject(&:nil?)
 end
 
-puts primes_upto(2_000_000).inject(:+)
+puts primes_upto(2_000_000).sum

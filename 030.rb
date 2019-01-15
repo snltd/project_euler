@@ -9,4 +9,4 @@ def sum_of_digit_powers(m)
   m.to_s.split('').inject(0) { |a, d| a + POWERS[d.to_i] }
 end
 
-puts((2..6 * 9**5).select { |n| n == sum_of_digit_powers(n) }.inject(:+))
+puts((2..6 * 9**5).select { |n| n == sum_of_digit_powers(n) }.sum)

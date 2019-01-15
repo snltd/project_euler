@@ -21,4 +21,4 @@ end
 
 ONETO99 = oneto99.freeze
 
-puts numbers_in_words.map { |w| w.delete(' -').length }.inject(:+)
+puts numbers_in_words.map { |w| w.delete(' -').length }.sum
