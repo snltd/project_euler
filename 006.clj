@@ -1,5 +1,0 @@
-(def range-end 101)
-(defn square [x] (* x x))
-(def sum-squares (reduce + (map square (range 1 range-end))))
-(def square-sums (square (reduce + (range 1 range-end))))
-(println (- square-sums sum-squares))
