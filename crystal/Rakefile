@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/rake_helpers'
+
+ALL_FILES = Pathname.new(__FILE__).dirname.children.sort
+
+desc 'compile everything'
+task :build do
+  ALL_FILES.select { |f| f.extname == '.cr' }.each do |src|
+    obj = src.sub_ext('')
+    next if obj.exist? && obj.mtime > src.mtime
+    puts "building #{src.basename}"
+    system("crystal build --release #{src}")
+  end
+end
+
+desc 'run all tests'
+task run: :build do
+  ALL_FILES.select { |f| f.basename.to_s =~ /^\d+$/ }.each do |exe|
+    run_prog(exe)
+  end
+end
