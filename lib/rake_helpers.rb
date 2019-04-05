@@ -50,5 +50,9 @@ def answers
   end
 end
 
+def run_programs(prog_list)
+  prog_list.each { |exe| run_prog(exe) }
+end
+
 ANSWERS = answers
 

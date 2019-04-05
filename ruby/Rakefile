@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/rake_helpers'
+
+ALL_FILES = Pathname.new(__FILE__).dirname.children.sort
+
+task default: :run
+
+desc 'run all programs'
+task :run do
+  run_programs(ALL_FILES.select { |f| f.extname == '.rb' })
+end
