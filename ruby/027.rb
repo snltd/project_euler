@@ -2,7 +2,7 @@
 
 # Is it cheating to use a predefined table of primes?
 
-require_relative 'lib/common'
+require_relative '../lib/common'
 
 def prime_run(a, b, l)
   n = 0

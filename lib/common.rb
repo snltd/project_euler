@@ -4,6 +4,13 @@ require 'pathname'
 
 RESOURCE_DIR = Pathname.new(__FILE__).dirname.parent + 'resources'
 
+# like Kernel#abort, but exit 0
+#
+def exit_ok(msg)
+  puts msg
+  exit 0
+end
+
 def proper_divisors(n)
   (1..n**0.5).select { |d| (n % d).zero? }.each_with_object([]) do |d, a|
     a.<< d

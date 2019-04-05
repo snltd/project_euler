@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative 'lib/common'
+require_relative '../lib/common'
 
 MAX = 10_000
 sum = 0

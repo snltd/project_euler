@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'set'
-require_relative 'lib/common'
+require_relative '../lib/common'
 
 def abundant?(n)
   sum_of_proper_divisors(n) > n

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 NUMS = %w[one two three four five six seven eight nine ten eleven twelve
-          thirteen fourteen fifteen sixteen seventeen eighteen nineteen].freeze
+          thirteen fourteen fifteen sixteen seventeen eighteen nineteen]
 
 TENS = %w[twenty thirty forty fifty sixty seventy eighty ninety].freeze
 

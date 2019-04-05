@@ -7,7 +7,7 @@
 # just didn't know quite enough.). The solution is to chop away n!
 # chunks of the million, moving along the number.
 
-require_relative 'lib/common'
+require_relative '../lib/common'
 
 numbers = ('0'..'9').to_a
 N = numbers.size
