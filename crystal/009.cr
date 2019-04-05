@@ -2,7 +2,7 @@
   (1..1000).each do |b|
     c = (a * a + b * b)**0.5
     next if c != c.round || a + b + c != 1000
-    puts a * b * c
+    puts (a * b * c).to_i
     exit 0
   end
 end
